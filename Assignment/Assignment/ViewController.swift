@@ -104,6 +104,23 @@ class ViewController: UIViewController
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
+    
+    //MARK: - Employee Name Clicked
+    @objc func employeeNameClicked(_ sender: EmployeeNameTapRecognizer)
+    {
+        if let selectedId = sender.employeeId
+        {
+            if let index = self.id_list.firstIndex(of: selectedId)
+            {
+                self.id_list.remove(at: index)
+            }
+            else
+            {
+                self.id_list.append(selectedId)
+            }
+            self.employeesTable.reloadData()
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource, UITableViewDelegate
@@ -129,6 +146,9 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate
         cell.salaryLabel.text = "\(employee.employeeSalary ?? 0)"
         cell.selectedSymbol.layer.cornerRadius = CGFloat(5)
         cell.selectedSymbol.isHidden = (self.id_list.firstIndex(of: (employee.id ?? 0)) == nil)
+        let tapGesture = EmployeeNameTapRecognizer(target: self, action: #selector(self.employeeNameClicked))
+        tapGesture.employeeId = employee.id
+        cell.nameLabel.addGestureRecognizer(tapGesture)
         return cell
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0022A0F727898AAF0018131E /* EmployeeNameTapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022A0F627898AAF0018131E /* EmployeeNameTapRecognizer.swift */; };
 		00445A5B2788AEA600971639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00445A5A2788AEA600971639 /* AppDelegate.swift */; };
 		00445A5F2788AEA600971639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00445A5E2788AEA600971639 /* ViewController.swift */; };
 		00445A622788AEA600971639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00445A602788AEA600971639 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0022A0F627898AAF0018131E /* EmployeeNameTapRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeNameTapRecognizer.swift; sourceTree = "<group>"; };
 		00445A572788AEA600971639 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00445A5A2788AEA600971639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00445A5E2788AEA600971639 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				00445A5E2788AEA600971639 /* ViewController.swift */,
 				00445A6E2788B83E00971639 /* EmployeeModel.swift */,
 				00445A702788D2C800971639 /* EmployeeCell.swift */,
+				0022A0F627898AAF0018131E /* EmployeeNameTapRecognizer.swift */,
 				00445A602788AEA600971639 /* Main.storyboard */,
 				00445A632788AEA900971639 /* Assets.xcassets */,
 				00445A652788AEA900971639 /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0022A0F727898AAF0018131E /* EmployeeNameTapRecognizer.swift in Sources */,
 				00445A6F2788B83E00971639 /* EmployeeModel.swift in Sources */,
 				00445A712788D2C900971639 /* EmployeeCell.swift in Sources */,
 				00445A5F2788AEA600971639 /* ViewController.swift in Sources */,
